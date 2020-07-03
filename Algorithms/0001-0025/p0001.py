@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def twoSum(self, nums, target):
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
         numsDict = dict()
         for i in range(len(nums)):
             numsDict[nums[i]] = numsDict.get(nums[i], []) + [i]
