@@ -7,7 +7,7 @@ class Solution:
         length = len(newNums)
         sortedNums = sorted(newNums)
         if length % 2 == 0:
-            median = (sortedNums[floor(length / 2 - 1)] + sortedNums[floor(length / 2)]) / 2
+            median = (sortedNums[length // 2 - 1] + sortedNums[length // 2]) / 2
         else:
-            median = sortedNums[floor((length - 1) / 2)]
+            median = sortedNums[(length - 1) // 2]
         return median
